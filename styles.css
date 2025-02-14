@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4e1d2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header {
+    background: linear-gradient(135deg, #f78fb3, #f8c9d7);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    width: 100%;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .header .btn {
+    background-color: #ff7b7b;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .header .btn:hover {
+    background-color: #ff4a4a;
+  }
+  
+  .cakes-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+  
+  .cake-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    animation: slideIn 1.5s ease-out;
+  }
+  
+  .cake-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cake-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .cake-card img {
+    width: 90%;
+    height: 180px;
+    border-radius: 10px;
+  }
+  
+  .cake-card h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #ff7b7b;
+  }
+  
+  .cake-card p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  .order-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background-color: #ff7b7b;
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+  }
+  
+  .order-btn:hover {
+    background-color: #ff4a4a;
+  }
+  
+  .footer {
+    background-color: #ff7b7b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4e1d2;
+    color: #333;
+  }
+  
+  /* Footer Styles */
+  .cake-footer {
+    background-color: #ff7b7b;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .footer-about,
+  .footer-links,
+  .footer-contact {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-about h3,
+  .footer-links h3,
+  .footer-contact h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  .footer-about p,
+  .footer-contact p {
+    font-size: 1rem;
+    color: #eaeaea;
+    line-height: 1.6;
+  }
+  
+  .footer-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #eaeaea;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #ffffff;
+  }
+  
+  .footer-bottom {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #eaeaea;
+  }
+  
+  .footer-bottom p {
+    margin: 10px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+      min-width: auto;
+    }
+  }
+  
